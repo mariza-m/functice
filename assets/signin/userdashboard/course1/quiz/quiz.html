@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DEMO quiz</title>
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poppins" >
+    <link href="quiz.css" rel="stylesheet">
+<!--
+    
+
+-->
+</head>
+<body>
+
+<div class="container">
+  <div class="question"></div>
+  <div class="choices">
+    <input type="checkbox" class="choice" id="choice1">
+    <label for="choice1" id="choice1-text"></label></br>
+    <input type="checkbox" class="choice" id="choice2">
+    <label for="choice2" id="choice2-text"></label></br>
+    <input type="checkbox" class="choice" id="choice3">
+    <label for="choice3" id="choice3-text"></label></br>
+    <input type="checkbox" class="choice" id="choice4">
+    <label for="choice4" id="choice4-text"></label></br>
+  </div>
+ 
+  <input type='submit' class="submit" value='Verify' onclick="checkChoice()"> 
+  <div class="result"></div>
+</div>
+<script src="quiz.js"></script>
+
+</body>
+
+</html>

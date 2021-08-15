@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+ 
+  background: linear-gradient(
+    45deg,
+    #ffeedd,
+    #b8b8ff
+  );
+}
+
+.container {
+  max-width: 650px;
+  ax-height: 370px;
+  margin: auto;
+
+}
+.container > * {
+  box-shadow: 0 1px 2px #0004, 0 0.8em 1.25em #0004, 0 1.3em 1.8em #0002;
+  margin: 2em;
+  border-radius: 1em;
+}
+
+/* ----- Flexbox Container ----- */
+.flexbox {
+  display: flex;
+  width: 400px;
+  padding: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.flexbox > * {
+  flex-grow: 1;
+  flex-basis: calc((460px - 100%) * 999);
+}
+.flex-item {
+  background: #9381ff;
+  border-radius: 25px;
+}
+
+
+
+@media (max-width: 543px) {
+  section {
+    max-width: 350px;
+
+    /* These just narrows the width after all the magic */
+  }
+}
+
+h1 {
+  padding: 1em 1em 1em;
+  margin-right: auto;
+  width: max-content;
+  font-size: 1.6rem;
+  color: white;
+  font-family: Poppins;
+  
+}
+
+p {
+  margin-inline: 2em;
+  line-height: 1.1;
+  padding-bottom: 0.5em;
+}
+#logo {
+  float: left; 
+  max-width: 10%;
+  height: auto;
+  
+}
